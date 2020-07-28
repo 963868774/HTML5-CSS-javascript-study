@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar {
+            width: 800px;
+            height: 40px;
+            border: 1px solid red;
+            border-radius: 20px;
+            padding: 1px;
+        }
+        
+        .in_bar {
+            width: 50%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: red;
+            transition: all 1s;
+        }
+        
+        .bar:hover .in_bar {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="in_bar"></div>
+    </div>
+</body>
+
+</html>
