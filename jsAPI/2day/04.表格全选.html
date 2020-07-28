@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+        }
+        
+        table {
+            border: black 1px solid;
+            border-collapse: collapse;
+        }
+        
+        table tr th {
+            border: 1px solid #000;
+            background-color: skyblue;
+            width: 300px;
+        }
+        
+        table tr td {
+            border: 1px solid #000;
+            text-align: center;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="j_Allbox"></th>
+                    <th>商品</th>
+                    <th>价格</th>
+                </tr>
+            </thead>
+            <tbody id="j_tb">
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>iphone8</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>iphone8</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>iphone8</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>iphone8</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>iphone8</td>
+                    <td>8000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script>
+    //表格全选 test1
+    // var j_Allbox = document.getElementById('j_Allbox'); //全选按钮
+    // var j_tbs = document.getElementById('j_tb').getElementsByTagName('input');
+    // j_Allbox.onclick = function() {
+    //     console.log(this.checked);
+    //     for (var i = 0; i < j_tbs.length; i++) {
+    //         j_tbs[i].checked = j_Allbox.checked;
+    //     }
+    // }
+    // for (var i = 0; i < j_tbs.length; i++) {
+    //     j_tbs[i].onclick = function() {
+    //         var flag = true;
+    //         for (var i = 0; i < j_tbs.length; i++) {
+    //             if (!j_tbs[i].checked) {
+    //                 flag = false;
+    //                 break;
+    //             }
+    //         }
+    //         j_Allbox.checked = flag;
+    //     }
+    // }
+
+    //表格全选 test2
+    var t_all = document.getElementById('j_Allbox');
+    var t_ts = document.getElementById('j_tb').getElementsByTagName('input');
+    t_all.onclick = function() { //全选按钮
+        for (var i = 0; i < t_ts.length; i++) {
+            t_ts[i].checked = this.checked;
+        }
+    }
+    for (var i = 0; i < t_ts.length; i++) {
+        t_ts[i].onclick = function() {
+            for (var i = 0; i < t_ts.length; i++) {
+                var flag = true;
+                if (!t_ts[i].checked) {
+                    flag = false;
+                    break;
+                }
+            }
+            t_all.checked = flag;
+        }
+    }
+</script>
+
+</html>

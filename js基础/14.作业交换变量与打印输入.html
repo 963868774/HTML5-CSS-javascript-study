@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log('-----交换变量-----');
+        var temp;
+        var name = '我是第一个变量';
+        var name2 = '我是第二个变量';
+        temp = name;
+        name = name2;
+        name2 = temp;
+        console.log(name, name2);
+        console.log('-----打印输出个人信息-----');
+        var i = prompt('请输入姓名');
+        var j = prompt('请输入年龄');
+        var x = prompt('性别');
+        alert('您的姓名是:' + i + '\n' + '您的年龄:' + j + '\n' + '性别:' + x);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box input {
+            color: #ccc;
+        }
+        
+        .pink {
+            outline: solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="text" value="目前是显示的" class="ipt">
+    </div>
+    <script>
+        var ipt = document.querySelector('.ipt');
+        ipt.onfocus = function() {
+            this.value = '';
+            this.className = 'ipt pink';
+        }
+        ipt.onblur = function() {
+            this.value = '目前是显示的';
+            this.className = 'ipt';
+        }
+        ipt
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="one">第一张图片</button>
+    <button id="tow">第二张图片</button><br>
+    <img src="../img/tudou.jpg" alt="" title="第一张图片">
+    <script>
+        // // 第一遍
+        // // 1.获取元素
+        // var one = document.getElementById('one');
+        // var tow = document.getElementById('tow');
+        // var img = document.querySelector('img');
+        // // //2.注册事件 3.处理程序
+        // tow.onclick = function() {
+        //     img.src = '../img/abcd.jpg';
+        //     img.title = '第二张图片';
+        // }
+        // one.onclick = function() {
+        //     img.src = '../img/tudou.jpg';
+        //     img.title = '第一张图片';
+        // }
+        // var one = document.getElementById('one');
+        // var tow = document.getElementById('tow');
+        // var img = document.querySelector('img');
+        // tow.onclick = function() {
+        //     img.src = '../img/abcd.jpg';
+        //     img.title = '这是第二张图片';
+        // }
+        // one.onclick = function() {
+        //     img.src = '../img/tudou.jpg';
+        //     img.title = '这是第一张图片';
+        // }
+        var one = document.getElementById('one');
+        var tow = document.getElementById('tow');
+        var img = document.querySelector('img');
+        tow.onclick = function() {
+            img.src = '../img/abcd.jpg';
+            img.title = '第二张图片';
+        }
+        one.onclick = function() {
+            img.src = '../img/tudou.jpg';
+            img.title = '第一张图片';
+        }
+    </script>
+</body>
+
+</html>

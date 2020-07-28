@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box li {
+            list-style: none;
+            display: inline;
+        }
+        
+        body {
+            background: url(../../img/睁眼.png)no-repeat center top;
+            width: 800px;
+            height: 800px;
+        }
+        
+        .box {
+            overflow: hidden;
+            margin: 0 auto;
+            width: 410px;
+            background-color: #fff;
+        }
+        
+        .box img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <ui class="box">
+        <li><img src="../../img/睁眼.png" alt=""></li>
+        <li><img src="../../img/闭眼.png" alt=""></li>
+        <li><img src="../../img/abcd.jpg" alt=""></li>
+        <li><img src="../../img/arr.png" alt=""></li>
+        <li><img src="../../img/tudou.jpg" alt=""></li>
+    </ui>
+    <script>
+        var imgs = document.querySelector('.box').querySelectorAll('img');
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function() {
+                document.body.style.backgroundImage = 'url(' + this.src + ')';
+            }
+        }
+    </script>
+</body>
+
+</html>

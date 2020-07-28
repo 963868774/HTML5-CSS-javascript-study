@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>我是div</div>
+<p> 123
+    <span>span</span>
+</p>
+<script>
+    //innerText 是非标准 不识别标签 读取是不读取格式和换行
+    //innerHTML 是W3C表中 识别标签 保留空格和换行
+    var div = document.querySelector('div');
+    div.innerHTML = '<strong>今天是:</strong>2020年';
+    // div.innerText = '<strong>今天是:</strong>2020年';
+    var p = document.querySelector('p');
+    console.log(p.innerText);
+    console.log(p.innerHTML);
+</script>
+
+<body>
+
+</body>
+
+</html>

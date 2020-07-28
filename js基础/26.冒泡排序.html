@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var arr = [5, 4, 3, 2, 1];
+        // for (i = 0; i <= arr.length - 1; i++) {
+        //     for (j = 0; j <= arr.length - i - 1; j++) { //内层管循环几次,第一次arr的长度为5,5-i =5-0-1=4;也就执行了交换了四次
+        //         if (arr[j] > arr[j + 1]) {
+        //             var temp = arr[j];
+        //             arr[j] = arr[j + 1];
+        //             arr[j + 1] = temp;
+        //         }
+        //     }
+        // }
+        // console.log(arr);
+
+        //冒泡第二次
+        var arr = [5, 4, 3, 2, 1]; //数组
+        for (i = 0; i < arr.length - 1; i++) { //控制外层趟数
+            for (j = 0; j < arr.length - i - 1; j++) { //控制交换次数
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j]; //交换两个变量值
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var user = prompt('请输入要显示的星星个数');
+        // var str = '';
+        // for (i = 1; i <= 5; i++) {
+        //     str = str + '★'
+        // }
+        // console.log(str);
+
+        //打印n行n列星星;
+        // var h = prompt('请输入要显示几行');
+        // var l = prompt('请输入要显示几列');
+        // var str = '';
+        // for (i = 1; i <= h; i++) {
+
+        //     for (j = 1; j <= l; j++) {
+        //         str = str + '★'
+        //     }
+        //     str = str + '\n' //从上到下执行编译 换行的位置一定要在输出下面
+        // }
+        // console.log(str);
+
+        //打印递减星星
+        // var str = '';
+        // for (i = 1; i <= 10; i++) {
+        //     for (j = i; j <= 10; j++) {// 星星的个数等于i的个数,第一次i是1由于j=i因此j也就从1开始打印了10个星星,第二次执行由于j=i第二次j从2开始数因此就是输出9个星星实现递减
+        //         str = str + '★';
+        //     }
+        //     str = str + '\n';
+        // }
+        // console.log(str);
+
+        //打印递增星星
+        // var str = '';
+        // for (var i = 1; i <= 10; i++) {
+        //     for (j = 1; j <= i; j++) { //第一次执行,由于j小于等于i ,第一次i是1所以j也是小于等于1 所以打印一颗星星,第二次执行由于j等于i,第二次i是2因此打印小于等于2个星星
+        //         str += '★';
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        //星星递减练习2
+        // var str = '';
+        // for (var i = 1; i <= 10; i++) {
+        //     for (var j = i; j <= 10; j++) {
+        //         str = str + '★';
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        //星星递增练习2
+        // var str = '';
+        // for (i = 1; i <= 10; i++) {
+        //     for (j = 1; j <= i; j++) {
+        //         str += '★';;
+        //     }
+        //     str += '\n';
+        // }
+        // console.log(str);
+
+        //乘法口诀
+        var str = '';
+        for (var i = 1; i <= 9; i++) {
+            for (var j = 1; j <= i; j++) {
+                str = str + j + 'x' + i + '=' + i * j + '\t';
+            }
+            str += '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

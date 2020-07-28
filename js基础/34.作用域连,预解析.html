@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //案例1
+        var a = 18;
+        f1();
+
+        function f1() {
+            var b = 9;
+            console.log(a);
+            console.log(b);
+            var a = 123;
+        }
+
+        // var a;
+
+        // function f1() {
+        //     var b;
+        //     var a;
+        //     b = 9;
+        //     console.log(a);
+        //     console.log(b);
+        //     a = 123;
+        // }
+        // a = 18;
+        // f1();
+
+        //案例2
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+
+        function f1() {
+            var a = b = c = 9;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+        function f1() {
+            var a;
+            a = b = c = 9;
+            console.log(a); //9
+            console.log(b); //9
+            console.log(c); //9
+        }
+        f1();
+        console.log(c); //没var 所以全局a 9
+        console.log(b); //没var 所以全局b 9 
+        console.log(a); //之前定义var过 所以函数内部局部的a 在这没定义过所以报错
+
+        //预解析思路,先根据预解析思路进行排列好 然后根据作用域链进行解析
+
+        //预解析要点
+        //1.将var 和 function进行提前
+        //2.var 变量声明只提前声明不提前赋值
+        //3.function 函数内部也要进行预解析思路的提前排列操作
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

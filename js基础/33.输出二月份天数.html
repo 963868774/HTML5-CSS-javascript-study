@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //判定二月天数
+        function backYear() {
+            var year = prompt('输入年份');
+            if (isRunYear(year)) {
+                alert('闰年2月有29天');
+            } else {
+                alert('平年2月有28天');
+            }
+        }
+        backYear();
+        //函数判断平闰年
+        function isRunYear(Year) {
+            var flag = false;
+            if (Year % 4 == 0 && Year % 100 != 0 || Year % 400 == 0) {
+                flag = true;
+            }
+            return flag;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

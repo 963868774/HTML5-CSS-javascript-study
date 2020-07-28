@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+    <button>按钮4</button>
+    <button>按钮5</button>
+    <script>
+        // //获取元素
+        // var btns = document.getElementsByTagName('button');
+        // for (i = 0; i < btns.length; i++) {
+        //     btns[i].onclick = function() { //注册事件 处理方法
+        //         for (i = 0; i < btns.length; i++) { //在所以操作前先clear颜色
+        //             btns[i].style.background = '';
+        //         }
+        //         this.style.background = 'pink'; //选择已选的按钮进行更改style颜色
+        //     }
+
+        // }
+
+        //2.第二次练习
+        var btns = document.getElementsByTagName('button');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function() {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.background = '';
+                }
+                this.style.background = 'pink';
+            }
+        }
+    </script>
+</body>
+
+</html>

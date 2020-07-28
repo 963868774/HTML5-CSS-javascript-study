@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function Computer(color, zl, pp, xh, gn) {
+        //     this.color = color;
+        //     this.zhongliang = zl;
+        //     this.pinpai = pp;
+        //     this.xinghao = xh;
+        //     this.gn = function(dy) {
+        //         console.log(dy);
+
+        //     }
+        // }
+        // var computer = new Computer('红色', '2', 'dell', '7560');
+        // computer.gn('电影');
+        // console.log(computer);
+
+        // //构造函数方法
+        // function Computer(color, zl, pp, xh, gn) {
+        //     this.yanse = color;
+        // }
+        // //创建对象方法
+        // var obj = {
+        //         color: 啊,
+        //     }
+        //     //另一种创建对象方法
+        // var obj = new Object();
+        // obj.name = 啊;
+
+        // function An(kuan, gao, bgc) {
+        //     this.whith = kuan;
+        //     this.hight = gao;
+        //     this.bgc = bgc;
+        //     this.xy = function(F) {
+        //         console.log(F);
+
+        //     }
+        // }
+        // var An = new An('800', 200, 'red');
+        // An.xy('行为');
+        // console.log(An);
+
+        //冒泡排序
+        // function sort(arr) {
+        //     for (i = 0; i <= arr.length - 1; i++) {
+        //         for (j = 0; j <= arr.length - i - 1; j++) {
+        //             if (arr[j] > arr[j + 1]) {
+        //                 var temp = arr[j];
+        //                 arr[j] = arr[j + 1];
+        //                 arr[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // var arr = sort([5, 1, 3, 2, 4]);
+        // console.log(arr);
+
+        //翻转数组
+        // function reverse(arr) {
+        //     var newArr = [];
+        //     for (i = arr.length - 1; i >= 0; i--) {
+        //         newArr[newArr.length] = arr[i];
+        //     }
+        //     return newArr;
+        // }
+        // var arr1 = reverse([1, 2, 3, 4, 5]);
+        // console.log(arr1);
+
+        //利用函数翻转数组2
+        // function reverse(arr) {
+        //     var newArr = [];
+        //     for (i = arr.length - 1; i >= 0; i--) {
+        //         newArr[newArr.length] = arr[i];
+
+        //     }
+        //     return newArr;
+        // }
+        // var re = reverse([5, 4, 3, 2, 1]);
+        // console.log(re);
+
+        //冒泡排序2
+        function sort(arr) {
+            for (var i = 0; i <= arr.length - 1; i++) {
+                for (var j = 0; j <= arr.length - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        var st = sort([1, 3, 2, 5, 4]);
+        console.log(st);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
