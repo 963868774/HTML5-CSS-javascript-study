@@ -1,0 +1,19 @@
+ol li {
+    color: red;
+}
+
+ol a {
+    color: blue;
+}
+
+
+/* 如果这边css样式 
+是#test 那么标签里应该是id="test" 如果是.test则标签运用为class="test" */
+
+#nav li {
+    color: turquoise;
+}
+
+.nav li a {
+    color: rgb(0, 255, 42);
+}

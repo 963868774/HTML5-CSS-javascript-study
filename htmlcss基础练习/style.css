@@ -1,0 +1,13 @@
+/* 外部样式表只写样式*/
+
+div {
+    color: red;
+    font: 700 48px 'microsoft yahei';
+}
+
+
+/* tdn 使用emmet 生成删除下划线 */
+
+a {
+    text-decoration: none;
+}
